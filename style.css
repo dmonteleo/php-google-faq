@@ -1,0 +1,92 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Lato', sans-serif;
+  color: gray;
+}
+
+header{
+  position:fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 15px;
+  border-bottom: 1px solid lightgray;
+  background-color: white;
+}
+
+.header-top{
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.header-top img{
+  margin-right: 20px;
+}
+
+.header-top p{
+  font-size: 20px;
+}
+
+.heder-bottom ul{
+  list-style: none;
+  display: flex;
+}
+
+.heder-bottom ul li{
+  position: relative;
+  margin-right: 20px;
+}
+
+.heder-bottom ul a{
+  text-decoration: none;
+  color: grey;
+}
+
+.heder-bottom ul li.active::after{
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  left: 0;
+  bottom: -15px;
+  background-color: #3367D6;
+}
+
+.heder-bottom ul li.active a{
+  color: #3367D6;
+}
+
+main{
+  padding-top: 130px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.faq{
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.faq .question{
+  color: black;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.faq .answer{
+  font-size: .9rem;
+  line-height: 25px;
+}
+
+.faq .answer p{
+  margin-bottom: 15px;
+}
+
+.faq .answer .subtitle{
+  color: black;
+  font-size: 1.2rem;
+}
